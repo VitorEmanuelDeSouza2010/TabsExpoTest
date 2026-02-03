@@ -50,6 +50,20 @@ export default function tabLayout() {
           ),
         }}
       />
+
+      <Tabs.Screen
+        name="list"
+        options={{
+          title: "List",
+          headerShown: false,
+          tabBarIcon: () => (
+            <Image
+              style={s.iconTab}
+              source={require("@/assets/icons8-pesquisa.gif")}
+            />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
